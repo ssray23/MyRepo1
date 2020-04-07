@@ -21,6 +21,10 @@ public class Car {
         System.out.println("Car Print : " + this.CarName + " .. of year " + this.CarYear);
     };
 
+    public String PrintCar1() {
+        return this.CarName + " .. of year " + this.CarYear;
+    };
+
     // Method to change a car
     public void WriteCar(String iName, int iYear) {
         this.CarName = iName;
