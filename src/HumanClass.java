@@ -1,3 +1,5 @@
+package com.suddha;
+
 public class HumanClass {
 
     private static int i = 10;
