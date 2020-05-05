@@ -1,0 +1,58 @@
+<html>
+<head></head>
+
+<body>
+<script language=javascript>
+    var x1 = 5;
+    var x2 = 12*x1;
+
+    alert(x1+" feet = "+x2+" inches");
+
+    var sum = 0;
+    for(var i=0; i<x1; i++)
+    {
+        sum += i;
+    }
+
+    alert("sum = "+sum);
+
+    var x3 = 7.2;
+    alert("Ceiling = "+Math.ceil(x3)+" Floor = "+
+        Math.floor(x3)+" Round = "+Math.round(x3));
+
+    var emp = new Array(3);
+    emp[0] = "John";
+    emp[1] = "Jill";
+    emp[2] = "Steve";
+
+    emp[0]    = new Array(3);
+    emp[1][0] = "Smith";
+    emp[0][1] = "45";
+    emp[0][2] = "Single";
+
+    emp[0][0] = "John";
+    emp[0][1] = "Smith";
+    emp[0][2] = "45";
+    emp[0][3] = "Single";
+
+    alert(emp[0][0]+" "+emp[0][1]+" is "+emp[0][2]+" and "+emp[0][3]);
+
+    var theDate  = new Date();
+    var theYear  = theDate.getFullYear();
+    var theMonth = theDate.getMonth();
+    var theDay   = theDate.getDate();
+
+    alert("Today: "+theDate+" "+"Year: "+theYear+" "+"Day: "+theDay);
+
+    var firstChar = "Hello".charCodeAt(0);
+
+    if (firstChar >= "A" && firstChar <= "Z")
+    {
+        alert(firstChar+" is an uppercase letter");
+    }
+
+    var index = "Hello".indexOf("ell");
+    alert("Index of the string 'ell' = "+index);
+</script>
+</body>
+</html>

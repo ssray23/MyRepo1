@@ -1,0 +1,13 @@
+f = open("demofile.txt", "r")
+print(f.readline())
+print(f.readline())
+print(f.readline())
+f.close()
+f = open("demofile.txt", "a")
+f.write("Now the file has more content!\n")
+f.write("Now the file has even more content!\n")
+f.close()
+f = open("demofile.txt", "r")
+for x in f:
+	print(x)
+f.close()
