@@ -1,0 +1,2 @@
+git remote add upstream https://github.com/ssray23/MyRepo1.git
+git remote add origin https://github.com/ssray23/MyRepo1.git

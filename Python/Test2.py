@@ -66,4 +66,4 @@ print(text5)
 fruits = ['orange', 'apple', 'pear', 'kiwi', 'apple', 'kiwi']
 print(fruits)
 print(fruits[0])
-print(fruit[9])
+

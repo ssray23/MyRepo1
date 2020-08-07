@@ -1,0 +1,11 @@
+// Start a little Web Server on your local computer
+// Once you have run this script (i.e. "node myFirst.js") from the terminal or command prompt,
+// start your internet browser, and type in the address: http://localhost:8080
+
+var http = require('http');
+
+// The function passed into the http.createServer() method, will be executed when someone tries to access the computer on port 8080.
+http.createServer(function (req, res) {
+  res.writeHead(200, {'Content-Type': 'text/html'});
+  res.end('Hello World of Node JS!');
+}).listen(8080);

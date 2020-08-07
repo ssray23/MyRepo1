@@ -1,4 +1,5 @@
 import os
+import datetime 
 os.remove("number2.txt")
 f = open("number.txt", "r")
 f1 = open("number2.txt","x")
