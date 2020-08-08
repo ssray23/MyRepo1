@@ -1,0 +1,21 @@
+# Initialize a Git repository with the contents of current working directory 
+git init 
+# check status of contents in the repository
+git status
+# add FileA in the directory to the repository
+git add FileA
+# add FileB inside Folder1 to the repository
+git add Folder1/FileB
+# add entire Folder2 to the repository
+git add Folder2/
+# add everything untracked and modified to the repository
+git add -A
+# removed deleted files from the repository (Note the . after -u)
+git add -u .  
+git status
+git commit -m "My commit"
+git remote --verbose
+git remote add origin https://github.com/ssray23/MyRepo1.git
+git push -u origin master
+
+Reference: https://www.datacamp.com/community/tutorials/git-push-pull
