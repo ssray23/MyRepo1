@@ -1,27 +1,49 @@
 # switch to folder where you want your repo 
 cd /c/suddha/
+
 # clone a remote repo (if starting on a new system)
 git clone https://github.com/ssray23/MyRepo1.git
+
 # Get inside your repo
-# cd /c/suddha/MyRepo1/
+cd /c/suddha/MyRepo1/
+
 # Initialize a Git repository with the contents of current working directory 
 git init 
+
 # check status of contents in the repository
 git status
+
 # add FileA in the directory to the repository
 git add FileA
+
 # add FileB inside Folder1 to the repository
 git add Folder1/FileB
+
 # add entire Folder2 to the repository
 git add Folder2/
+
 # add everything untracked and modified to the repository
-git add -A
+git add -A 
+
+# add everything added to the repository
+git add .
+
 # removed deleted files from the repository (Note the . after -u)
 git add -u .  
+
+# check status .. what has been added/changed/deleted in your local git
 git status
+
+# commit changes to local git
 git commit -m "My commit"
+
+# check git remote (i.e. repo on github)
 git remote --verbose
+
+# connect local git to remote git repo (you will get error if already linked)
 git remote add origin https://github.com/ssray23/MyRepo1.git
+
+# push to github repo on the web
 git push -u origin master
 
-Reference: https://www.datacamp.com/community/tutorials/git-push-pull
+# Reference: https://www.datacamp.com/community/tutorials/git-push-pull
