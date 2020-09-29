@@ -1,7 +1,9 @@
-# switch to your working area
+# switch to folder where you want your repo 
 cd /c/suddha/
 # clone a remote repo (if starting on a new system)
 git clone https://github.com/ssray23/MyRepo1.git
+# Get inside your repo
+# cd /c/suddha/MyRepo1/
 # Initialize a Git repository with the contents of current working directory 
 git init 
 # check status of contents in the repository
