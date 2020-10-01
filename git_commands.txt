@@ -1,11 +1,11 @@
-# switch to folder where you want your repo 
-cd /c/suddha/
+# switch to folder where you want your repos to be 
+cd /c/suddha/GitRepos
 
-# clone a remote repo (if starting on a new system)
+# clone a remote repo (if starting on a clean new system)
 git clone https://github.com/ssray23/MyRepo1.git
 
-# Get inside your repo
-cd /c/suddha/MyRepo1/
+# Get inside your repo just created
+cd /c/suddha/GitRepos/MyRepo1/
 
 # Initialize a Git repository with the contents of current working directory 
 git init 
