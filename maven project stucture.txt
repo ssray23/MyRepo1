@@ -1,0 +1,77 @@
+While creating the java source files for the project .. create the below manually....
+
+maven_simple
+└── src
+    └── main
+        └── java
+            └── hello
+				└──helloWorld.java
+			resources
+			└──(no files)		
+    pom.xml
+
+------------------------------
+After mvn compile command:
+-----------------------------
+
+maven_simple
+│   pom.xml
+│
+├───src
+│   └───main
+│       ├───java
+│       │   └───hello
+│       │           helloWorld.java
+│       │
+│       └───resources
+└───target
+    ├───classes
+    │   └───hello
+    │           helloWorld.class
+    │
+    ├───generated-sources
+    │   └───annotations
+    └───maven-status
+        └───maven-compiler-plugin
+            └───compile
+                └───default-compile
+                        createdFiles.lst
+                        inputFiles.lst
+
+-----------------------------
+After mvn package command:
+-----------------------------
+maven_simple
+│   pom.xml
+├───src
+│   └───main
+│       ├───java
+│       │   └───hello
+│       │           helloWorld.java
+│       │
+│       └───resources
+└───target
+    │   helloWorld-0.1.0-shaded.jar
+    │   helloWorld-0.1.0.jar
+    │   original-helloWorld-0.1.0.jar
+    │
+    ├───classes
+    │   └───hello
+    │           helloWorld.class
+    │
+    ├───generated-sources
+    │   └───annotations
+    ├───maven-archiver
+    │       pom.properties
+    │
+    └───maven-status
+        └───maven-compiler-plugin
+            └───compile
+                └───default-compile
+                        createdFiles.lst
+                        inputFiles.lst
+		
+---------------------------------------		
+run your project ...
+----------------------------------------
+java -jar target\helloWorld-0.1.0.jar
