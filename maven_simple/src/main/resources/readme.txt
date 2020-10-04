@@ -1,0 +1,1 @@
+required for mvn package command
