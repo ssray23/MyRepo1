@@ -1,3 +1,6 @@
+------------------------------------------------------
+  GitHub Remote Repo (default)
+------------------------------------------------------
 # switch to folder where you want your repos to be 
 cd /c/suddha/GitRepos
 
@@ -40,10 +43,33 @@ git commit -m "My commit"
 # check git remote (i.e. repo on github)
 git remote --verbose
 
-# connect local git to remote git repo (you will get error if already linked)
+# connect local git to remote github repo (you will get fatal error if already linked to remote)
 git remote add origin https://github.com/ssray23/MyRepo1.git
 
-# push to github repo on the web
+# push to remote repo on the web
 git push -u origin master
 
-# Reference: https://www.datacamp.com/community/tutorials/git-push-pull
+------------------------------------------------------
+  GitLab and Bitbucket Remote Repos
+------------------------------------------------------
+
+# remove current remote repository (i.e. GitHub)
+git remote remove origin
+
+# connect local git to remote GitLab repo 
+git remote add origin <git@gitlab.com:suddharay/MyRepo1.git  <--- does not work SSH method
+git remote add origin https://gitlab.com/suddharay/MyRepo1.git  <---  works!
+
+# push local git repo to "another" remote bitbucket repo (bitbucket)
+git remote set-url origin git://bitbucket.org/ssray23/myrepo1.git
+git remote set-url origin git@gitlab.com:suddharay/suddha-project-1.git
+
+# check
+git remote --verbose
+
+# push to remote repo on the web
+git push -u origin master
+
+# Reference1: https://www.datacamp.com/community/tutorials/git-push-pull
+# Reference2: https://stackoverflow.com/questions/16330404/git-how-to-remove-remote-origin-from-git-repo
+# Reference3: 
