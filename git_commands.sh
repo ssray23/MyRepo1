@@ -38,7 +38,7 @@ git add -u .
 git status
 
 # commit changes to local git
-git commit -m "My commit"
+git commit -m "What did I change?"
 
 # check git remote (i.e. repo on github)
 git remote --verbose

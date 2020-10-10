@@ -1,3 +1,9 @@
+# Get inside your repo just created
+cd /c/suddha/GitRepos/MyRepo1/
+
+# Initialize a Git repository with the contents of current working directory 
+git init 
+
 # ------------------------------------------------------
 #  GitLab Remote Repo
 # ------------------------------------------------------
