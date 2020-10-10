@@ -50,6 +50,9 @@ git remote remove origin
 # connect local git to remote github repo (you will get fatal error if already linked to remote)
 git remote add origin https://github.com/ssray23/MyRepo1.git
 
+# re-check remote repo (i.e. SHOULD be github)
+git remote --verbose
+
 # push to remote repo on the web
 git push -u origin master
 

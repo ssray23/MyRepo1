@@ -41,3 +41,6 @@ git config --global http.sslVerify false
 
 # push entire local repo to remote repo on the web
 git push origin master --force
+
+# remove current remote repository (i.e. BitBucket)
+git remote remove origin
