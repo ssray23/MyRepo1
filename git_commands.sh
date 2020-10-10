@@ -63,10 +63,6 @@ git remote remove origin
 git remote add origin <git@gitlab.com:suddharay/MyRepo1.git  <--- somehow does not work SSH method
 git remote add origin https://gitlab.com/suddharay/MyRepo1.git  <---  HTTP works!
 
-# connect local git to remote BitBucket repo 
-git remote set-url origin git://bitbucket.org/ssray23/myrepo1.git
-git remote add origin https://bitbucket.org/ssray23/MyRepo1.git
-
 # check
 git remote --verbose
 
