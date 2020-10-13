@@ -47,7 +47,7 @@ git remote --verbose
 # remove current remote repository (i.e. GitHub or GitLab) .. just in case
 git remote remove origin
 
-# connect local git to remote github repo (you will get fatal error if already linked to remote)
+# connect local git to remote GITHUB (MAIN) Repository (you will get fatal error if already linked to remote)
 git remote add origin https://github.com/ssray23/MyRepo1.git
 
 # re-check remote repo (i.e. SHOULD be github)
