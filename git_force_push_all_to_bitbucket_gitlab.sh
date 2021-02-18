@@ -1,5 +1,6 @@
 # Get inside your repo just created
 cd /c/suddha/GitRepos/MyRepo1/
+cd /c/Users/suddha.satta.ray/Box/MyRepo1
 
 # Initialize a Git repository with the contents of current working directory 
 git init 
